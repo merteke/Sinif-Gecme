@@ -8,6 +8,7 @@ public class sinifGecme {
         Scanner input=new Scanner(System.in);
         
         double mat,fizik,turkce,kimya,muzik;
+        int ders=0;
 
         double toplam=0;
         double ort;
@@ -25,25 +26,30 @@ public class sinifGecme {
 
         if(mat<=100 && mat>=0){
             toplam+=mat;
+            ders++;
         }
         if(fizik<=100 && fizik>=0){
             toplam+=fizik;
+            ders++;
             
         }
         if(kimya<=100 && kimya>=0){
             toplam+=kimya;
+            ders++;
             
         }
         if(turkce<=100 && turkce>=0){
             toplam+=turkce;
+            ders++;
             
         }
         if(muzik<=100 && muzik>=0){
             toplam+=muzik;
+            ders++;
             
         }
 
-        ort=toplam/5;
+        ort=toplam/ders;
 
         System.out.println("Ogrencinin genel ortalamasi="+ort);
 
